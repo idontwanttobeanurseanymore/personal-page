@@ -5,6 +5,14 @@
     - Colores
     - Detalles
 */
+:root {
+--color-rosa: rgb(255, 0, 157);
+--color-morado: rgb(144, 0, 255);
+--color-naranja: rgb(255, 85, 0);
+--color-azul: rgb(0, 4, 255);
+--color-verde: rgb(0, 202, 125); 
+}
+
 * {
     /*Reset básico*/
     margin: 0;
@@ -13,7 +21,7 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(147, 250, 149);
+    background-color: var(--color-verde);
 }
 /*Para poder ver la estructura:
     div, section, header, footer, main{
@@ -28,19 +36,22 @@ body{
     margin: 0;
     padding: 20px;
     /*estos ajustes son para móvil*/
-    background-image: url(./images/isla.de.ons.jpg);
+    
     background-size:cover;
     background-position: center;
 }
 .header img{
-width: 100%; height: auto; border-radius: 50%; margin-bottom: 10px; 
+width: 100%; height: auto; margin-bottom: 10px; 
 }
-
+.main-img{
+width: 100%; height: auto; border-radius: 50%; margin-bottom: 10px;
+}
 /*
 Header: desaparece cuando haces scroll, pero se queda el nav
 Enlaces cambian de color en hover y no subrayados
 ojo! MOBILE FIRST
-
+background-image: url(./images/isla.de.ons.jpg);
+<img class="background" src="./images/isla.de.ons.jpg" alt="isla-de-ons">
 */
 
 nav{
@@ -63,14 +74,6 @@ nav a {
     border-radius: 5px
 }
 
-/*colores que quiero usar:
-    rosa rgb(255, 0, 157)
-    morado rgb(144, 0, 255)
-    naranja rgb(255, 85, 0)
-    azul marino rgb(0, 4, 255)
-    verde esmeralda?? rgb(61, 213, 63)
-*/
-
 body {
     display: flex;
     flex-direction: column;
@@ -86,15 +89,20 @@ justify-content: center;
 gap: 20px; 
 }
 
-
 footer{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color:pink;
-    border: 1px solid rgb(255, 0, 132);
+    border: 1px solid var(--color-rosa);
     padding: 10px;
+}
+li{
+    margin-left: 20px;
+    padding-left: 20px;
+    gap: 10px;
+    marker: none;
 }
 
 /*
@@ -110,5 +118,4 @@ ol, ul {
     border-radius: 0%;
     margin-bottom: 10px;
 }
-    
-*/
+  */
