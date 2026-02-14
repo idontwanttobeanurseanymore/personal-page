@@ -69,8 +69,9 @@ nav{
     margin-top: 15px;
     background-color: pink;
     border-radius: 20%;
-   position: fixed;
-   top:0px;
+    position: fixed;
+    /*mirar posición para anchar a algun contenedor*/
+    top:0;
 }
 nav a {
     font-size: smaller;
@@ -113,6 +114,15 @@ form{
     border-radius: 5%;
     padding:20px;
 }
+.form-intro{
+    font-size: larger;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    background-color: pink;
+    border: solid 1px var(--color-rosa);
+    border-radius: 5px;
+}
 .question {
     display: flex;
     flex-direction: column;
@@ -141,6 +151,17 @@ footer{
     border: 1px solid var(--color-rosa);
     padding: 10px;
 }
+.submit{
+    background-color: pink;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.submit:hover {
+        background-color: var(--color-rosa);
+    }
+
 /*
 li{
     margin-left: 20px;

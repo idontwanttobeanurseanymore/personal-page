@@ -11,7 +11,7 @@
         <!--<img class="logo"src="./images/welcome-to-the-chaos.png"alt="welcome to the chaos">
     --> <img class="background"src="./images/isla.de.ons.jpg"alt="isla-de-ons">
         <h1>Welcome</h1>
-        <nav class="nav">
+        <nav class="nav"> <!--hacer un nuevo html para que redirija-->
             <a href="#about">About me</a>
             <a href="#projects">My projects</a>
             <a href="#form">Form</a>
@@ -34,11 +34,17 @@
         
         <h2 id="form">Form</h2>
             <form> <!-- 4 secciones question (Q+A)
+                label + id SIEMPRE en input type text
+
+                label y section??
+                ctrl + D para seleccionar lo mismo y escribir a la vez
+                values en los options, para luego recogerlos
+                añadir legend a cada section, para que se vea mejor en el formulario
                 -->
-                <p>Now let's talk you and me!</p>
+                <p class="form-intro">Now let's talk you and me!</p>
                 <section class=question>
                     <h3 class="q1">Are you a cat or a dog person?*</h3>
-                    <select id="dropdown" name="dropdown" required>
+                    <select class="a1"id="dropdown" name="dropdown" required>
                         <option value="">(please select one)</option>
                         <option value="1">I LOVE cats</option>
                         <option value="2">I LOVE dogs</option>
@@ -47,27 +53,28 @@
                 </section>
                <section class=question>
                 <h3 class="q2">Do you have any pet at home?*</h3>
-                    <p><input type="radio" name="question2" value="Yes" checked> Yes!</p>
-                    <p><input type="radio" name="question2" value="No"> No...</p>
+                    <p><input class="a2"type="radio" name="question2" value="Yes" checked> Yes!</p>
+                    <p><input class="a2"type="radio" name="question2" value="No"> No...</p>
                 </section>
                 <section class=question>
                 <h3 class="q3">Where would your perfect vacation be?</h3>
-                    <p><input type="checkbox" name="question3" value="sunny"> Somewhere sunny of course!</p>
-                    <p><input type="checkbox" name="question3" value="snowman"> Somewhere I can make a snowman!</p>
-                    <p><input type="checkbox" name="question3" value="food"> Somewhere I can eat tasty food</p>
+                    <p><input class="a3"type="checkbox" name="question3" value="sunny"> Somewhere sunny of course!</p>
+                    <p><input class="a3"type="checkbox" name="question3" value="snowman"> Somewhere I can make a snowman!</p>
+                    <p><input class="a3"type="checkbox" name="question3" value="food"> Somewhere I can eat tasty food</p>
                     <p><input type="checkbox"name="question3"value="museums">
                     I would spend all day in museums</p>
-                    <p><input type="checkbox"name="question3"value="party">
+                    <p><input class="a3"type="checkbox"name="question3"value="party">
                     Somewhere I can party a lot!</p>
-                    <p><input type="checkbox"name="question3"value="none" checked>
-                    My perfect holidays are not listed here</p>
+                    <p><input class="a3"type="checkbox"name="question3"value="none" checked>
+                    My perfect holidays are not listed here</p> <!--datalist para que desplieguen las opciones, pero también te deja escribir-->
                 </section>
                 <section class=question>
                 <h3 class="q4">Is there anything you'd like to add?</h3>
-                    <input type="text" name="question4" placeholder="yei!">
-                
-                <input type="checkbox" name="condiciones" value="condiciones" required> Condiciones
-                <input type="submit" value="send your answers!">
+                    <input class="a4"type="text" name="question4" placeholder="yei!">
+                <section>
+                <p><input class="conditions"type="checkbox" name="condiciones" value="condiciones" required> Condiciones</p>
+                </section>
+                <input class="submit"type="submit" value="send your answers!" action="">
                 </section>
             </form>
             <h2 id="contact">Contact</h2>
