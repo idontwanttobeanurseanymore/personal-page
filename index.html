@@ -21,33 +21,56 @@
         </nav> 
     </header>
     <main>
-        <h2>Marta's</h2>
+        <h2 id="about">Marta's</h2>
         <img class="main-img"src="./images/welcome-to-the-chaos.png" alt="welcome to the chaos!"/>
         <p>This is me</p>
        
-        <h2>Proyects</h2>
+        <h2 id="projects">Proyects</h2>
         <h3>Frontend</h3>
             <li>First</li>
             <li>Second</li> 
             <li>Third</li>
         <h3>Backend</h3>
         
-        <h2>Form</h2>
-            <form>
-                <h3>Question1</h3>
-                    <input type="radio" name="question1" value="option1"> Option 1
-                    <input type="radio" name="question1" value="option2"> Option 2 
-                    <input type="radio" name="question1" value="option3"> Option 3
-                <h3>Question2</h3>
-                    <input type="checkbox" name="question2" value="option1"> Option 1 
-                    <input type="checkbox" name="question2" value="option2"> Option 2 
-                    <input type="checkbox" name="question2" value="option3"> Option 3
-                <h3>Question3</h3>
-                    <input type="text" name="question3" placeholder="yei! :)">
+        <h2 id="form">Form</h2>
+            <form> <!-- 4 secciones question (Q+A)
+                -->
+                <p>Now let's talk you and me!</p>
+                <section class=question>
+                    <h3 class="q1">Are you a cat or a dog person?*</h3>
+                    <select id="dropdown" name="dropdown" required>
+                        <option value="">(please select one)</option>
+                        <option value="1">I LOVE cats</option>
+                        <option value="2">I LOVE dogs</option>
+                        <option value="3">I can't choose!</option>
+                        </select>
+                </section>
+               <section class=question>
+                <h3 class="q2">Do you have any pet at home?*</h3>
+                    <p><input type="radio" name="question2" value="Yes" checked> Yes!</p>
+                    <p><input type="radio" name="question2" value="No"> No...</p>
+                </section>
+                <section class=question>
+                <h3 class="q3">Where would your perfect vacation be?</h3>
+                    <p><input type="checkbox" name="question3" value="sunny"> Somewhere sunny of course!</p>
+                    <p><input type="checkbox" name="question3" value="snowman"> Somewhere I can make a snowman!</p>
+                    <p><input type="checkbox" name="question3" value="food"> Somewhere I can eat tasty food</p>
+                    <p><input type="checkbox"name="question3"value="museums">
+                    I would spend all day in museums</p>
+                    <p><input type="checkbox"name="question3"value="party">
+                    Somewhere I can party a lot!</p>
+                    <p><input type="checkbox"name="question3"value="none" checked>
+                    My perfect holidays are not listed here</p>
+                </section>
+                <section class=question>
+                <h3 class="q4">Is there anything you'd like to add?</h3>
+                    <input type="text" name="question4" placeholder="yei!">
                 
                 <input type="checkbox" name="condiciones" value="condiciones" required> Condiciones
                 <input type="submit" value="send your answers!">
+                </section>
             </form>
+            <h2 id="contact">Contact</h2>
     <footer>
         <p>Copyright 2026. </p>
             <p>Todos los derechos reservados.</p>

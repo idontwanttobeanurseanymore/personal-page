@@ -33,18 +33,26 @@ body{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 0;
+    margin-top: 30px;
     padding: 20px;
     /*estos ajustes son para móvil*/
     
     background-size:cover;
     background-position: center;
+    background-color: var(--color-morado);
+    border-radius: 5%;
 }
 .header img{
-width: 100%; height: auto; margin-bottom: 10px; 
+width: 100%; 
+height: auto; 
+margin-bottom: 10px; 
+border-radius: 5%;
 }
 .main-img{
-width: 100%; height: auto; border-radius: 50%; margin-bottom: 10px;
+width: 100px; 
+height: auto; 
+
+margin-bottom: 10px;
 }
 /*
 Header: desaparece cuando haces scroll, pero se queda el nav
@@ -59,15 +67,20 @@ nav{
     flex-direction: row;
     gap: 10px;
     margin-top: 15px;
+    background-color: pink;
+    border-radius: 20%;
+   position: fixed;
+   top:0px;
 }
 nav a {
+    font-size: smaller;
     display:flex; 
     justify-content: center; 
     align-items: center;
     text-decoration: none;
     color: black;
     font-weight: bold;
-    border: solid 1px black;
+    ;
     padding: 5px;
     text-align:center;
     background-color: pink;
@@ -88,7 +101,37 @@ flex-direction: column;
 justify-content: center;
 gap: 20px; 
 }
-
+h2{
+    font-size: larger;
+    font-style:oblique;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    background-color: var(--color-morado);
+    border-radius: 5%;
+    padding:20px;
+}
+.question {
+    display: flex;
+    flex-direction: column;
+}
+h3{
+padding: 10px;
+text-align: center;
+}
+input{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start
+}
+p {
+    display: flex;
+    flex-wrap: nowrap;
+    gap:10px;
+    padding:5px;
+}
 footer{
     display: flex;
     flex-direction: row;
@@ -98,6 +141,7 @@ footer{
     border: 1px solid var(--color-rosa);
     padding: 10px;
 }
+/*
 li{
     margin-left: 20px;
     padding-left: 20px;
@@ -105,7 +149,7 @@ li{
     marker: none;
 }
 
-/*
+
 ol, ul {
     margin-left: 20px;
     padding-left: 20px;
